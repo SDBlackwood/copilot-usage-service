@@ -6,7 +6,8 @@ class Usage(pydantic.BaseModel):
     message_id: int
     timestamp: str
     report_name: Optional[str] = None
-    credits_used: int
+    # This needs to be a float to handle the decimal places
+    credits_used: float
 
 
 class UsageResponse(pydantic.BaseModel):
@@ -27,4 +28,4 @@ class CurrentPeriodResponse(pydantic.BaseModel):
 class ReportResponse(pydantic.BaseModel):
     id: int
     name: str
-    credits_cost: int
+    credit_cost: int

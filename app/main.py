@@ -4,6 +4,7 @@ from app.settings import Settings
 from app.datatypes import CurrentPeriod, CurrentPeriodResponse, ReportResponse, Usage
 import pydantic
 from collections import Counter
+import re
 
 app = FastAPI()
 settings = Settings()
@@ -56,14 +57,20 @@ async def get_usage(client: httpx.Client = Depends(egress_client)):
 
             try:
                 # Call the report endpoint to get the credits used
+                print(
+                    f"Fetching report data from: {settings.report_endpoint}/{message.report_id}"
+                )
                 response = client.get(f"{settings.report_endpoint}/{message.report_id}")
                 response.raise_for_status()
                 data = ReportResponse.model_validate(response.json())
-                credits_used = data.credits_cost
+                credits_used = float(data.credit_cost)
                 report_name = data.name
+                print(f"Report name: {report_name}")
+                print(f"Credits used: {credits_used}")
             except httpx.HTTPStatusError as e:
                 # If report request was 404, fall back to previous calculation
                 if e.response.status_code == 404:
+                    print("Report not found, falling back to previous calculation")
                     credits_used = _calculate_credits_for_message(message)
                 else:
                     print("Error fetching report data: ", e)
@@ -71,10 +78,12 @@ async def get_usage(client: httpx.Client = Depends(egress_client)):
                         status_code=500, detail=f"Failed to fetch report data: {e}"
                     )
             except pydantic.ValidationError as e:
+                # If we cannot parse the report data, fall back to previous calculation
+                # We don't want to fail the entire request if one report fails to parse
+                # This doesn mean that failures can go unnoticed, so we would want to add
+                # logging and alerting here.
                 print("Error parsing report data: ", e)
-                raise HTTPException(
-                    status_code=500, detail=f"Failed to parse report data: {e}"
-                )
+                credits_used = _calculate_credits_for_message(message)
 
         response = Usage(
             message_id=message_id, timestamp=timestamp, credits_used=credits_used
@@ -83,7 +92,9 @@ async def get_usage(client: httpx.Client = Depends(egress_client)):
         if report_name is not None:
             response.report_name = report_name
 
-        response_list.append(response)
+        # Turn into a dict and exclude missing values
+        response_dict = response.model_dump(exclude_none=True)
+        response_list.append(response_dict)
 
     return response_list
 
@@ -92,7 +103,7 @@ def _calculate_credits_for_message(message: CurrentPeriod) -> int:
     """
     Calculate the credits used for a message based on the message id
     """
-    cost = settings.base_cost_per_message
+    cost = float(settings.base_cost_per_message)
     # Add 0.05 for each character in the message
     cost += 0.05 * len(message.text)
 
@@ -106,6 +117,19 @@ def _calculate_credits_for_message(message: CurrentPeriod) -> int:
 
     # Calculate the cost for the third vowels or uppercase rule
     cost += _calculate_third_vowels_or_uppercase_cost(message.text)
+
+    # Caclulate the message char lenght
+    cost += _calculate_word_length_cost(message.text)
+
+    # If all words are unique, remove 2 credites (only if the credit is > 1)
+    if cost > float(settings.base_cost_per_message) + 2 and len(
+        set(message.text.split())
+    ) == len(message.text.split()):
+        cost -= 2
+
+    # Convert to pallendrome and Double
+    if is_pallendrome(message.text):
+        cost *= 2
 
     # Round to the nearest integer
     return cost
@@ -145,3 +169,26 @@ def _count_words_by_length(text: str) -> tuple[int, int, int]:
             counter["long"] += 1
 
     return counter["short"], counter["medium"], counter["long"]
+
+
+def _calculate_word_length_cost(text: str) -> int:
+    """
+    Add 5 credits if messages is > 100 characters
+    """
+    cost = 0
+    if len(text) > 100:
+        cost += 5
+    return cost
+
+
+def is_pallendrome(text: str) -> bool:
+    """
+    Check if a text is a pallendrome
+    """
+    # Uppercase the text and remove non-alphanumeric characters
+    text = text.upper()
+    # Only match a-z A-Z 0-9 and otherwise replace with empty string
+    regex = re.compile(r"[^a-zA-Z0-9]")
+    text = regex.sub("", text)
+    # Compare the text with its reverse
+    return text == text[::-1]

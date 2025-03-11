@@ -11,3 +11,7 @@ services:
       - .:/app
     environment:
       - PYTHONPATH=/app
+      - BILLING_PERIOD_ENDPOINT=https://owpublic.blob.core.windows.net/tech-task/messages/current-period
+      - REPORT_ENDPOINT=https://owpublic.blob.core.windows.net/tech-task/reports
+      - BASE_COST_PER_MESSAGE=1
+      
