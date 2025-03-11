@@ -44,7 +44,7 @@ async def get_usage(client: httpx.Client = Depends(egress_client)):
 
     # Caclulate credits used for each message
     for message in current_period_usage.messages:
-        credits_used = 0
+        credits_used = float(0)
         report_name = None
         timestamp = message.timestamp
         message_id = message.id
@@ -99,7 +99,7 @@ async def get_usage(client: httpx.Client = Depends(egress_client)):
     return response_list
 
 
-def _calculate_credits_for_message(message: CurrentPeriod) -> int:
+def _calculate_credits_for_message(message: CurrentPeriod) -> float:
     """
     Calculate the credits used for a message based on the message id
     """
@@ -131,16 +131,17 @@ def _calculate_credits_for_message(message: CurrentPeriod) -> int:
     if is_pallendrome(message.text):
         cost *= 2
 
-    # Round to the nearest integer
-    return cost
+    # Round to 2 decimal plaes.
+    # NOTE: we may want to be careful about how much we are rounding off here
+    return round(cost, 2)
 
 
-def _calculate_third_vowels_or_uppercase_cost(text: str) -> int:
+def _calculate_third_vowels_or_uppercase_cost(text: str) -> float:
     """
     Given the text caclulates if any third (i.e. 3rd, 6th, 9th) character is an
     uppercase or lowercase vowel (a, e, i, o, u) add 0.3 credits for each occurrence.
     """
-    cost = 0
+    cost = float(0)
     # Range over the text skipping every 3rd character
     for i in range(0, len(text), 3):
         if text[i].lower() in ["a", "e", "i", "o", "u"]:
@@ -150,7 +151,7 @@ def _calculate_third_vowels_or_uppercase_cost(text: str) -> int:
     return round(cost, 2)
 
 
-def _count_words_by_length(text: str) -> tuple[int, int, int]:
+def _count_words_by_length(text: str) -> tuple[float, float, float]:
     """
     Count words in a text by their length categories:
     - short: 1-3 characters
@@ -168,7 +169,7 @@ def _count_words_by_length(text: str) -> tuple[int, int, int]:
         else:
             counter["long"] += 1
 
-    return counter["short"], counter["medium"], counter["long"]
+    return float(counter["short"]), float(counter["medium"]), float(counter["long"])
 
 
 def _calculate_word_length_cost(text: str) -> int:
