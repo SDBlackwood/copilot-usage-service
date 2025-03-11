@@ -118,12 +118,12 @@ def _calculate_third_vowels_or_uppercase_cost(text: str) -> int:
     """
     cost = 0
     # Range over the text skipping every 3rd character
-    for i in range(2, len(text), 3):
+    for i in range(0, len(text), 3):
         if text[i].lower() in ["a", "e", "i", "o", "u"]:
             cost += 0.3
         elif text[i].isupper():
             cost += 0.3
-    return cost
+    return round(cost, 2)
 
 
 def _count_words_by_length(text: str) -> tuple[int, int, int]:
