@@ -2,6 +2,25 @@
 
 The `copilot-usage-service` is a Python FastAPI API with a single endpoint `/usage` to support the Orbital copilot an calculate user copilot credit usage. 
 
+## Docker Set Up
+There is a `docker-compose.yaml` file to aid development.  Start the service with
+
+```
+docker compose up .
+```
+
+Note: there are 2 Dockerfiles
+- `./container/development/Dockerfile`
+- `./container/production/Dockerfile`
+
+This is to allow for changes to the dockerfile during development and optimizations in production. 
+
+You can then access the usage endpoint on 
+
+```
+`http://localhost:8080/usage`
+```
+
 ## Development Setup
 
 Ensure that python >=3.13 is installed.  This can be done using pyenv on MacOS
@@ -27,19 +46,6 @@ Install dependecies
 ```
 poetry install
 ```
-
-### Docker 
-There is a `docker-compose.yaml` file to aid development.  Start the service with
-
-```
-docker compose up .
-```
-
-Note: there are 2 Dockerfiles
-- ./container/development/Dockerfile
-- ./container/production/Dockerfile
-
-This is to allow for changes to the dockerfile during development and optimizations in production. 
 
 # Constraints
 
