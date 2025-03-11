@@ -1,10 +1,10 @@
 import pytest 
 from fastapi.testclient import TestClient
-
+from app.datatypes import UsageResponse
 def test_get_usage(client):
     response = client.get("/usage")
     assert response.status_code == 200
-    assert response.json() == {"usage": [
+    assert response.json() == UsageResponse(usage=[
         {
             "message_id": 123,
             "timestamp": "2021-01-01T00:00:00Z",
@@ -17,4 +17,5 @@ def test_get_usage(client):
             "report_name": "Report 2",
             "credits_used": 200
         }
-    ]}
+    ]).model_dump()
+
