@@ -1,0 +1,13 @@
+# Basic docker compose file to run the copilot-usage-service app        lication
+
+services:
+  copilot-usage-service:
+    build:
+      context: .
+      dockerfile: container/development/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app

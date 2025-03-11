@@ -1,0 +1,41 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Copilot Usage Service",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/usage": {
+      "get": {
+        "summary": "Get copilot usage data",
+        "operationId": "get_usage",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "usage": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "message_id": {"type": "number"},
+                          "timestamp": {"type": "string"},
+                          "report_name": {"type": "string", "nullable": true},
+                          "credits_used": {"type": "number"}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
