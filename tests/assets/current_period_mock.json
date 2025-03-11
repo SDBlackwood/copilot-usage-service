@@ -1,0 +1,589 @@
+{
+    "messages": [
+      {
+        "text": "Generate a Tenant Obligations Report for the new lease terms.",
+        "timestamp": "2024-04-29T02:08:29.375Z",
+        "report_id": 5392,
+        "id": 1000
+      },
+      {
+        "text": "Are there any restrictions on alterations or improvements?",
+        "timestamp": "2024-04-29T03:25:03.613Z",
+        "id": 1001
+      },
+      {
+        "text": "Is there a clause for default and remedies?",
+        "timestamp": "2024-04-29T07:27:34.985Z",
+        "id": 1002
+      },
+      {
+        "text": "What are the indemnity provisions?",
+        "timestamp": "2024-04-29T10:22:13.926Z",
+        "id": 1003
+      },
+      {
+        "text": "What is the security deposit amount?",
+        "timestamp": "2024-04-29T11:54:18.493Z",
+        "id": 1004
+      },
+      {
+        "text": "Please generate a comprehensive Tenant Obligations Report.",
+        "timestamp": "2024-04-29T12:31:00.539Z",
+        "report_id": 5392,
+        "id": 1005
+      },
+      {
+        "text": "What are the restrictions on operating hours and any related provisions for commercial tenants?",
+        "timestamp": "2024-04-29T12:57:04.853Z",
+        "id": 1006
+      },
+      {
+        "text": "Are there any clauses related to property insurance?",
+        "timestamp": "2024-04-29T13:43:23.382Z",
+        "id": 1007
+      },
+      {
+        "text": "Who is responsible for maintenance and repairs?",
+        "timestamp": "2024-04-29T14:33:22.741Z",
+        "id": 1008
+      },
+      {
+        "text": "Produce a comprehensive Maintenance Responsibilities Report for the tenants.",
+        "timestamp": "2024-04-29T16:02:31.649Z",
+        "report_id": 8806,
+        "id": 1009
+      },
+      {
+        "text": "Create a Short Lease Report.",
+        "timestamp": "2024-04-29T16:17:57.827Z",
+        "report_id": 1124,
+        "id": 1010
+      },
+      {
+        "text": "What happens if the property is sold during the lease term?",
+        "timestamp": "2024-04-29T16:40:52.561Z",
+        "id": 1011
+      },
+      {
+        "text": "What happens if the property is sold during the lease term?",
+        "timestamp": "2024-04-29T17:17:41.609Z",
+        "id": 1012
+      },
+      {
+        "text": "Are there any environmental or zoning restrictions?",
+        "timestamp": "2024-04-29T17:21:57.758Z",
+        "id": 1013
+      },
+      {
+        "text": "Please create a Short Lease Report for the residential property.",
+        "timestamp": "2024-04-29T18:27:09.164Z",
+        "report_id": 1124,
+        "id": 1014
+      },
+      {
+        "text": "Are there any specific rules for commercial tenants?",
+        "timestamp": "2024-04-29T19:13:28.156Z",
+        "id": 1015
+      },
+      {
+        "text": "Produce an annual Landlord Responsibilities Report.",
+        "timestamp": "2024-04-29T20:55:36.836Z",
+        "report_id": 5447,
+        "id": 1016
+      },
+      {
+        "text": "What are the penalties for breaching the lease terms?",
+        "timestamp": "2024-04-30T00:14:33.053Z",
+        "id": 1017
+      },
+      {
+        "text": "Are there any clauses for dispute resolution?",
+        "timestamp": "2024-04-30T00:51:22.652Z",
+        "id": 1018
+      },
+      {
+        "text": "How are the common areas managed?",
+        "timestamp": "2024-04-30T02:00:17.660Z",
+        "id": 1019
+      },
+      {
+        "text": "Produce a Short Lease Report for the upcoming lease term.",
+        "timestamp": "2024-04-30T03:37:47.073Z",
+        "report_id": 1124,
+        "id": 1020
+      },
+      {
+        "text": "Describe the penalties for late payment of rent and any grace periods provided in the lease agreement.",
+        "timestamp": "2024-04-30T03:51:56.696Z",
+        "id": 1021
+      },
+      {
+        "text": "What is the rent and how is it varied?",
+        "timestamp": "2024-04-30T04:52:41.870Z",
+        "id": 1022
+      },
+      {
+        "text": "Produce a comprehensive Environmental Compliance Report.",
+        "timestamp": "2024-04-30T05:13:54.540Z",
+        "report_id": 7321,
+        "id": 1023
+      },
+      {
+        "text": "Are there any specific hours of operation?",
+        "timestamp": "2024-04-30T10:55:11.189Z",
+        "id": 1024
+      },
+      {
+        "text": "What is the process for handling disputes?",
+        "timestamp": "2024-04-30T11:02:20.467Z",
+        "id": 1025
+      },
+      {
+        "text": "Could you clarify the process for the landlord to return the security deposit at the end of the lease term?",
+        "timestamp": "2024-04-30T11:44:33.048Z",
+        "id": 1026
+      },
+      {
+        "text": "What are the conditions for early termination?",
+        "timestamp": "2024-04-30T12:20:25.431Z",
+        "id": 1027
+      },
+      {
+        "text": "Please provide an Occupancy Rate Report for the commercial units.",
+        "timestamp": "2024-04-30T13:03:55.172Z",
+        "report_id": 9634,
+        "id": 1028
+      },
+      {
+        "text": "Create an updated Landlord Responsibilities Report.",
+        "timestamp": "2024-04-30T14:11:24.978Z",
+        "report_id": 5447,
+        "id": 1029
+      },
+      {
+        "text": "Please create a Rent Payment History Report.",
+        "timestamp": "2024-04-30T17:27:06.453Z",
+        "report_id": 8452,
+        "id": 1030
+      },
+      {
+        "text": "Explain the lease renewal process, including any notice periods and conditions for renegotiation.",
+        "timestamp": "2024-04-30T21:04:36.765Z",
+        "id": 1031
+      },
+      {
+        "text": "What is the process for renewing the lease?",
+        "timestamp": "2024-04-30T21:25:18.421Z",
+        "id": 1032
+      },
+      {
+        "text": "Can you provide a Short Lease Report?",
+        "timestamp": "2024-05-01T02:37:43.971Z",
+        "report_id": 1124,
+        "id": 1033
+      },
+      {
+        "text": "What are the payment terms for the rent?",
+        "timestamp": "2024-05-01T02:50:37.101Z",
+        "id": 1034
+      },
+      {
+        "text": "What is the notice period for terminating the lease?",
+        "timestamp": "2024-05-01T04:50:53.192Z",
+        "id": 1035
+      },
+      {
+        "text": "Are there any provisions for rent abatement?",
+        "timestamp": "2024-05-01T06:16:22.071Z",
+        "id": 1036
+      },
+      {
+        "text": "Can you provide a Retail Lease Report for the commercial property?",
+        "timestamp": "2024-05-01T08:00:25.069Z",
+        "report_id": 3952,
+        "id": 1037
+      },
+      {
+        "text": "Explain how common area maintenance fees are calculated and billed to the tenant.",
+        "timestamp": "2024-05-01T08:43:57.531Z",
+        "id": 1038
+      },
+      {
+        "text": "Are pets allowed in the property?",
+        "timestamp": "2024-05-01T09:37:22.494Z",
+        "id": 1039
+      },
+      {
+        "text": "Is there a clause for landlord entry into the property?",
+        "timestamp": "2024-05-01T09:59:31.407Z",
+        "id": 1040
+      },
+      {
+        "text": "Produce a Landlord Responsibilities Report.",
+        "timestamp": "2024-05-01T13:04:40.784Z",
+        "report_id": 5447,
+        "id": 1041
+      },
+      {
+        "text": "Describe the dispute resolution mechanisms outlined in the lease, including mediation and arbitration procedures.",
+        "timestamp": "2024-05-01T13:14:53.854Z",
+        "id": 1042
+      },
+      {
+        "text": "How are property taxes handled?",
+        "timestamp": "2024-05-01T14:17:28.020Z",
+        "id": 1043
+      },
+      {
+        "text": "Please list all the specific maintenance responsibilities that fall on the tenant as per the lease agreement.",
+        "timestamp": "2024-05-01T15:06:29.597Z",
+        "id": 1044
+      },
+      {
+        "text": "Can you generate a Retail Lease Report for the quarterly review?",
+        "timestamp": "2024-05-01T15:58:04.287Z",
+        "report_id": 3952,
+        "id": 1045
+      },
+      {
+        "text": "Please generate a Maintenance Responsibilities Report.",
+        "timestamp": "2024-05-01T16:25:37.311Z",
+        "report_id": 8806,
+        "id": 1046
+      },
+      {
+        "text": "What is the process for requesting repairs?",
+        "timestamp": "2024-05-01T18:47:14.227Z",
+        "id": 1047
+      },
+      {
+        "text": "Explain the circumstances and process for the tenant to sublease the property to another party.",
+        "timestamp": "2024-05-01T20:55:40.301Z",
+        "id": 1048
+      },
+      {
+        "text": "Are there any clauses related to health and safety?",
+        "timestamp": "2024-05-01T21:31:23.772Z",
+        "id": 1049
+      },
+      {
+        "text": "Is subletting permitted?",
+        "timestamp": "2024-05-01T22:01:49.704Z",
+        "id": 1050
+      },
+      {
+        "text": "Detail the responsibilities of the landlord for maintaining structural elements of the property.",
+        "timestamp": "2024-05-01T22:43:41.093Z",
+        "id": 1051
+      },
+      {
+        "text": "Generate a Retail Lease Report for the new property.",
+        "timestamp": "2024-05-02T01:26:16.946Z",
+        "report_id": 3952,
+        "id": 1052
+      },
+      {
+        "text": "What are the rules regarding signage?",
+        "timestamp": "2024-05-02T06:06:22.600Z",
+        "id": 1053
+      },
+      {
+        "text": "What are the procedures for rent review?",
+        "timestamp": "2024-05-02T06:53:21.698Z",
+        "id": 1054
+      },
+      {
+        "text": "Create a Tenant Obligations Report for review.",
+        "timestamp": "2024-05-02T08:05:19.265Z",
+        "report_id": 5392,
+        "id": 1055
+      },
+      {
+        "text": "What is the lease term?",
+        "timestamp": "2024-05-02T08:20:25.371Z",
+        "id": 1056
+      },
+      {
+        "text": "Provide a summary of the provisions related to property alterations and the necessary approvals required from the landlord.",
+        "timestamp": "2024-05-02T09:33:59.362Z",
+        "id": 1057
+      },
+      {
+        "text": "Are there any guarantees or warranties provided?",
+        "timestamp": "2024-05-02T12:03:50.589Z",
+        "id": 1058
+      },
+      {
+        "text": "What are the cleaning and maintenance requirements?",
+        "timestamp": "2024-05-02T14:47:11.531Z",
+        "id": 1059
+      },
+      {
+        "text": "Can you create an Occupancy Rate Report for the residential units?",
+        "timestamp": "2024-05-02T16:01:17.193Z",
+        "report_id": 9634,
+        "id": 1060
+      },
+      {
+        "text": "What are the specific conditions under which the tenant can request rent abatement or reductions?",
+        "timestamp": "2024-05-02T16:15:38.838Z",
+        "id": 1061
+      },
+      {
+        "text": "Create a Tenant Obligations Report.",
+        "timestamp": "2024-05-02T17:51:49.106Z",
+        "report_id": 5392,
+        "id": 1062
+      },
+      {
+        "text": "Can you generate an Environmental Compliance Report?",
+        "timestamp": "2024-05-02T18:56:54.517Z",
+        "report_id": 7321,
+        "id": 1063
+      },
+      {
+        "text": "Produce a detailed Maintenance Responsibilities Report.",
+        "timestamp": "2024-05-02T20:29:24.012Z",
+        "report_id": 8806,
+        "id": 1064
+      },
+      {
+        "text": "Detail the tenant's obligations regarding property upkeep and cleanliness standards as stated in the lease.",
+        "timestamp": "2024-05-02T23:39:40.191Z",
+        "id": 1065
+      },
+      {
+        "text": "Are there any rent escalation clauses?",
+        "timestamp": "2024-05-03T01:04:01.375Z",
+        "id": 1066
+      },
+      {
+        "text": "What are the tenant's responsibilities?",
+        "timestamp": "2024-05-03T02:56:15.854Z",
+        "id": 1067
+      },
+      {
+        "text": "Detail the process and criteria for the landlord to enter the property for inspections or repairs.",
+        "timestamp": "2024-05-03T03:16:29.919Z",
+        "id": 1068
+      },
+      {
+        "text": "What are the specific conditions that trigger the lease's break clause and the associated penalties, if any?",
+        "timestamp": "2024-05-03T05:10:37.616Z",
+        "id": 1069
+      },
+      {
+        "text": "Can you provide a detailed explanation of the rent adjustment mechanism in the lease and how frequently it is applied?",
+        "timestamp": "2024-05-03T05:40:38.249Z",
+        "id": 1070
+      },
+      {
+        "text": "Are there any provisions for property damage?",
+        "timestamp": "2024-05-03T08:22:34.108Z",
+        "id": 1071
+      },
+      {
+        "text": "Are there any restrictions on the use of the property?",
+        "timestamp": "2024-05-03T10:47:01.627Z",
+        "id": 1072
+      },
+      {
+        "text": "Provide information on the signage regulations for the property as specified in the lease agreement.",
+        "timestamp": "2024-05-03T12:41:51.818Z",
+        "id": 1073
+      },
+      {
+        "text": "What are the parking arrangements?",
+        "timestamp": "2024-05-03T13:28:32.954Z",
+        "id": 1074
+      },
+      {
+        "text": "Is there a confidentiality clause?",
+        "timestamp": "2024-05-03T13:34:16.774Z",
+        "id": 1075
+      },
+      {
+        "text": "Tell me the name of the landlord.",
+        "timestamp": "2024-05-03T13:46:50.430Z",
+        "id": 1076
+      },
+      {
+        "text": "Can you list the exact terms under which the tenant is allowed to make improvements to the leased premises?",
+        "timestamp": "2024-05-03T15:14:16.330Z",
+        "id": 1077
+      },
+      {
+        "text": "What are the exact steps and timeline for the tenant to follow if they wish to terminate the lease early?",
+        "timestamp": "2024-05-03T15:57:09.202Z",
+        "id": 1078
+      },
+      {
+        "text": "Is there a clause for lease extension?",
+        "timestamp": "2024-05-03T17:39:40.945Z",
+        "id": 1079
+      },
+      {
+        "text": "When does the lease start and end?",
+        "timestamp": "2024-05-03T19:01:35.797Z",
+        "id": 1080
+      },
+      {
+        "text": "Generate an updated Rent Payment History Report.",
+        "timestamp": "2024-05-03T21:11:14.417Z",
+        "report_id": 8452,
+        "id": 1081
+      },
+      {
+        "text": "Generate a detailed Environmental Compliance Report.",
+        "timestamp": "2024-05-03T21:17:32.996Z",
+        "report_id": 7321,
+        "id": 1082
+      },
+      {
+        "text": "Are there any penalties for late rent payment?",
+        "timestamp": "2024-05-03T22:55:26.327Z",
+        "id": 1083
+      },
+      {
+        "text": "Please produce a summary Environmental Compliance Report.",
+        "timestamp": "2024-05-03T23:06:32.661Z",
+        "report_id": 7321,
+        "id": 1084
+      },
+      {
+        "text": "What are the conditions for lease renewal?",
+        "timestamp": "2024-05-03T23:29:58.404Z",
+        "id": 1085
+      },
+      {
+        "text": "Create a Rent Payment History Report for the last year.",
+        "timestamp": "2024-05-04T00:57:06.036Z",
+        "report_id": 8452,
+        "id": 1086
+      },
+      {
+        "text": "Generate a Maintenance Responsibilities Report for the tenants.",
+        "timestamp": "2024-05-04T02:12:27.765Z",
+        "report_id": 8806,
+        "id": 1087
+      },
+      {
+        "text": "What are the landlord's obligations in the event of property damage due to fire or other disasters?",
+        "timestamp": "2024-05-04T03:02:48.255Z",
+        "id": 1088
+      },
+      {
+        "text": "Is there an option to renew the lease?",
+        "timestamp": "2024-05-04T03:29:18.288Z",
+        "id": 1089
+      },
+      {
+        "text": "Can you create a Retail Lease Report?",
+        "timestamp": "2024-05-04T03:30:33.224Z",
+        "report_id": 3952,
+        "id": 1090
+      },
+      {
+        "text": "What are the detailed conditions under which the landlord can increase the rent during the lease period?",
+        "timestamp": "2024-05-04T04:19:49.852Z",
+        "id": 1091
+      },
+      {
+        "text": "Describe the confidentiality obligations for both parties concerning lease terms and conditions.",
+        "timestamp": "2024-05-04T05:05:14.148Z",
+        "id": 1092
+      },
+      {
+        "text": "Please generate a Tenant Obligations Report for the new tenant.",
+        "timestamp": "2024-05-04T06:06:40.023Z",
+        "report_id": 5392,
+        "id": 1093
+      },
+      {
+        "text": "Can you outline the insurance requirements for both the tenant and landlord as specified in the lease?",
+        "timestamp": "2024-05-04T07:39:24.198Z",
+        "id": 1094
+      },
+      {
+        "text": "Are utilities included in the rent?",
+        "timestamp": "2024-05-04T09:46:15.627Z",
+        "id": 1095
+      },
+      {
+        "text": "What are the landlord's responsibilities?",
+        "timestamp": "2024-05-04T09:51:12.819Z",
+        "id": 1096
+      },
+      {
+        "text": "Explain how property taxes are apportioned between the landlord and tenant according to the lease.",
+        "timestamp": "2024-05-04T10:05:22.906Z",
+        "id": 1097
+      },
+      {
+        "text": "What happens in case of natural disasters?",
+        "timestamp": "2024-05-04T10:07:12.368Z",
+        "id": 1098
+      },
+      {
+        "text": "Create a Landlord Responsibilities Report for the upcoming year.",
+        "timestamp": "2024-05-04T10:50:45.122Z",
+        "report_id": 5447,
+        "id": 1099
+      },
+      {
+        "text": "Is there a break clause in the lease?",
+        "timestamp": "2024-05-04T10:57:44.389Z",
+        "id": 1100
+      },
+      {
+        "text": "Produce a detailed Maintenance Responsibilities Report for the lease agreement.",
+        "timestamp": "2024-05-04T11:01:33.644Z",
+        "report_id": 8806,
+        "id": 1101
+      },
+      {
+        "text": "Create an updated Landlord Responsibilities Report for compliance.",
+        "timestamp": "2024-05-04T13:26:50.191Z",
+        "report_id": 5447,
+        "id": 1102
+      },
+      {
+        "text": "Can you create a Retail Lease Report for our records?",
+        "timestamp": "2024-05-04T13:46:43.946Z",
+        "report_id": 3952,
+        "id": 1103
+      },
+      {
+        "text": "orbital latibro",
+        "timestamp": "2024-05-04T14:18:20.137Z",
+        "id": 1104
+      },
+      {
+        "text": "Produce an Occupancy Rate Report for the property.",
+        "timestamp": "2024-05-04T14:29:23.690Z",
+        "report_id": 9634,
+        "id": 1105
+      },
+      {
+        "text": "How is the security deposit returned?",
+        "timestamp": "2024-05-04T15:12:36.875Z",
+        "id": 1106
+      },
+      {
+        "text": "What is the procedure for terminating the lease?",
+        "timestamp": "2024-05-04T15:18:56.481Z",
+        "id": 1107
+      },
+      {
+        "text": "Is the lease assignable?",
+        "timestamp": "2024-05-04T17:21:17.645Z",
+        "id": 1108
+      },
+      {
+        "text": "Please generate a Short Lease Report for the client.",
+        "timestamp": "2024-05-04T18:23:31.165Z",
+        "report_id": 1124,
+        "id": 1109
+      }
+    ]
+  }
