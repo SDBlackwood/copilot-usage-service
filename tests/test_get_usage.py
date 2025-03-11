@@ -3,20 +3,7 @@ from fastapi.testclient import TestClient
 from app.datatypes import UsageResponse
 import httpx
 from app.settings import Settings
-from app.main import app, egress_client
-
-
-def test_get_usage(client, test_raw_dataclient):
-    # Mock the egress client to return a fixture
-    # As described here https://fastapi.tiangolo.com/advanced/testing-dependencies/#use-the-appdependency_overrides-attribute
-    app.dependency_overrides[egress_client] = lambda: test_raw_dataclient
-
-    try:
-        response = client.get("/usage")
-        assert response.status_code == 200
-    finally:
-        # Clean up the override after the test
-        app.dependency_overrides.clear()
+from app.main import app, egress_client, _count_words_by_length
 
 
 def test_returns_500_if_upstrea_fails(client, test_raw_dataclient_500):

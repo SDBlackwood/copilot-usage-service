@@ -22,3 +22,9 @@ class CurrentPeriod(pydantic.BaseModel):
 
 class CurrentPeriodResponse(pydantic.BaseModel):
     messages: list[CurrentPeriod]
+
+
+class ReportResponse(pydantic.BaseModel):
+    id: int
+    name: str
+    credits_cost: int

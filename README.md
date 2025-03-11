@@ -39,4 +39,4 @@ Note: there are 2 Dockerfiles
 - ./container/development/Dockerfile
 - ./container/production/Dockerfile
 
-This is to allow for changes to the dockerfile during development and optimizations in production.  
+This is to allow for changes to the dockerfile during development and optimizations in production. 
